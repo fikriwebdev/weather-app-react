@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+  font-family: "Poppins", sans-serif;
+  max-width: 375px;
+  margin: 0 auto;
+  background-color: #4158d0;
+  background-image: linear-gradient(
+    43deg,
+    #4158d0 0%,
+    #c850c0 46%,
+    #ffcc70 100%
+  );
+}
+
+.App {
+  transition: all 0.5s ease;
+  filter: brightness(-40);
+  background-image: url("img/chill.png");
+  min-height: 100vh;
+  background-size: cover;
+}
+
+.App.chill {
+  background-image: url("img/chill.png");
+  min-height: 100vh;
+  background-size: cover;
+  transition: 0.4s ease;
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
+
+.App.sun {
+  background-image: url("img/sunset.png");
+  min-height: 100vh;
+  background-size: cover;
+  transition: 0.4s ease;
+}
+
+.App.rain {
+  background-image: url("img/rain.png");
+  min-height: 100vh;
+  background-size: cover;
+  transition: all 0.4s ease;
+}
+.App.fog {
+  background-image: url("img/fog.png");
+  min-height: 100vh;
+  background-size: cover;
+  transition: all 0.4s ease;
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  padding: 100px 0 25px 0;
+}
+
+.search-box input {
+  padding: 10px 5px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+}
+
+form {
+  display: flex;
+}
+
+.search-box form input {
+  padding: 10px 10px;
+}
+
+.date {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 16px;
+  padding: 25px 0;
+}
+
+.date div h3 {
+  border: 2px solid white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.temperature {
+  display: flex;
+  justify-content: center;
+  padding: 25px 0;
+}
+
+.temperature div h3 {
+  font-size: 50px;
+  color: white;
+  font-weight: 700;
+  border: solid 2px white;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.city {
+  display: flex;
+  justify-content: center;
+  font-size: 32px;
+  font-style: italic;
+  color: white;
+}
+
+.desc {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 32px;
+}
